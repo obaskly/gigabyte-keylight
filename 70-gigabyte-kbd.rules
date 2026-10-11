@@ -1,0 +1,7 @@
+# Let the logged-in user control the Gigabyte keyboard backlight (HID LampArray).
+# Matches only USB interface 4 of 0414:8104, not the keyboard or vendor interfaces.
+# Must sort before 73-seat-late.rules, which is where the uaccess ACL gets applied.
+# udev needs all ATTRS keys of one rule on the same parent, and the interface number and
+# the vendor/product ids live on different parents, so the interface is flagged first.
+SUBSYSTEM=="hidraw", SUBSYSTEMS=="usb", ATTRS{bInterfaceNumber}=="04", ENV{GIGABYTE_KBD_LAMPARRAY}="1"
+SUBSYSTEM=="hidraw", ENV{GIGABYTE_KBD_LAMPARRAY}=="1", ATTRS{idVendor}=="0414", ATTRS{idProduct}=="8104", TAG+="uaccess"
