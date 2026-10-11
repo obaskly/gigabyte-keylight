@@ -145,14 +145,3 @@ rm -r ~/.config/gigabyte-kbd
 
 Then delete the project folder. Run `python3 kbd.py auto on` first if you want the firmware's own lighting
 back immediately.
-
-## Files
-
-| File | Purpose |
-| --- | --- |
-| `kbd_gui.py` | The PyQt6 window |
-| `kbd.py` | HID LampArray code and the command-line tool |
-| `install.sh` | Creates the venv, installs PyQt6, adds the app-menu launcher |
-| `install-rule.sh` | Installs the udev rule (needs sudo) |
-| `70-gigabyte-kbd.rules` | The udev rule |
-| `keylight.png` | App icon |
