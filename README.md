@@ -1,5 +1,7 @@
 # Keyboard Lights
 
+<img width="358" height="803" alt="Screenshot from 2026-10-11 16-38-56" src="https://github.com/user-attachments/assets/834ff4a8-790b-4c16-953c-99a4d581a064" />
+
 A small PyQt6 app (and command-line tool) for the keyboard backlight colour and brightness on Gigabyte
 laptops running Linux. Gigabyte's own Control Center is Windows-only, and on Linux the only control you
 normally get is the on/off toggle (Fn+Space).
